@@ -7,6 +7,10 @@ _Last updated: 2026-05-16_
 ## Structure
 ```
 .
+.agent
+.agent/inbox
+.agent/journal
+.agent/outbox
 LICENSE
 README.md
 ai.ps1
@@ -17,7 +21,7 @@ powershell-ai.gif
 <!-- List external services, APIs, or sister projects this depends on -->
 
 ## Active Work
-- None
+- Initialized bizagent agent structure (.agent/, sitemap.md)
 
 ## Known Issues
 - None
