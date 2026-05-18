@@ -1,5 +1,5 @@
 # powershell-ai — Sitemap
-_Last updated: 2026-05-16_
+_Last updated: 2026-05-17_
 
 ## Overview
 <!-- Add a 1-2 sentence description of this project -->
@@ -11,6 +11,7 @@ _Last updated: 2026-05-16_
 .agent/inbox
 .agent/journal
 .agent/outbox
+deploy.sh
 LICENSE
 README.md
 ai.ps1
@@ -21,7 +22,7 @@ powershell-ai.gif
 <!-- List external services, APIs, or sister projects this depends on -->
 
 ## Active Work
-- Initialized bizagent agent structure (.agent/, sitemap.md)
+- Added standard `deploy.sh` script for automated deployments
 
 ## Known Issues
 - None
