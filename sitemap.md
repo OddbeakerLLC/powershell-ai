@@ -1,28 +1,31 @@
 # powershell-ai — Sitemap
-_Last updated: 2026-05-17_
+_Last updated: 2026-08-15_
 
 ## Overview
-<!-- Add a 1-2 sentence description of this project -->
+PowerShell script that uses OpenAI API to generate PowerShell commands from natural language prompts. Includes deploy.sh for git push automation.
 
 ## Structure
 ```
 .
-.agent
-.agent/inbox
-.agent/journal
-.agent/outbox
-deploy.sh
-LICENSE
-README.md
-ai.ps1
-powershell-ai.gif
+├── .agent/                    # Agent management (inbox, journal, outbox)
+├── .git/                     # Git repository
+├── LICENSE                   # GNU License
+├── README.md                 # Documentation, installation, usage
+├── ai.ps1                    # Main script: prompts user, calls OpenAI API, outputs command
+├── powershell-ai.gif         # Demo animation
+└── deploy.sh                 # Standard git add/commit/push automation
 ```
 
 ## Key Integrations
-<!-- List external services, APIs, or sister projects this depends on -->
+- **OpenAI API** (GPT-3.5-turbo) – generates commands
+- **PowerShell Invoke-WebRequest** – HTTP client (built-in)
+- **Git** – version control, deploy.sh uses git push
 
 ## Active Work
-- Added standard `deploy.sh` script for automated deployments
+- None currently
 
 ## Known Issues
-- None
+- Script displays generated command but does not prompt for confirmation or execute (contradicts README).
+- Uses GPT‑3.5‑turbo model which may be outdated.
+- No configuration file encryption; API key stored in plain text at ~/.ai.conf.
+- Limited error handling for network failures (only HTTP status code).
